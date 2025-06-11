@@ -581,3 +581,36 @@ var swiper = new Swiper('.slider-home9', {
         },
     },
 });
+
+
+if ($(".slider-latest-notifications").length > 0) {
+  var swiper = new Swiper(".slider-latest-notifications", {
+    spaceBetween: 20,
+    observer: true,
+    observeParents: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".pagination-notifications",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".notif-next",
+      prevEl: ".notif-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
