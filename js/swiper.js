@@ -601,16 +601,23 @@ if ($(".slider-latest-notifications").length > 0) {
       nextEl: ".notif-next",
       prevEl: ".notif-prev",
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
+   breakpoints: {
+  0: {
+    slidesPerView: 1.1, // just a bit of next slide
+    spaceBetween: 10,
+  },
+  576: {
+    slidesPerView: 1.5,
+    spaceBetween: 15,
+  },
+  768: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  1200: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
+}
   });
 }

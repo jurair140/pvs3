@@ -15198,6 +15198,26 @@ instructors-item
 .swiper-navigation .swiper-button-next {
   color: #e53935;
 }
+/* Ensure Swiper section doesn't overflow on mobile */
+.latest-notifications-section {
+  overflow: hidden;
+}
+
+.slider-latest-notifications {
+  overflow: hidden;
+}
+
+/* Optional: Make sure the notification card handles long content well */
+.notification-card {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Prevent horizontal scroll on mobile */
+body, html {
+  overflow-x: hidden;
+}
 
 
 
