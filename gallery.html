@@ -25,12 +25,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="css/mmenu.css" />
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/siper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-
-
-
 
     <!-- Font -->
     <link rel="stylesheet" href="font/fonts.css" />
@@ -43,6 +39,9 @@
     <link rel="shortcut icon" href="images/logo/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSs4QDeb3x02o-W_lTSv49402TeyTbBYE"></script>
+
+
+
 
 </head>
 
@@ -229,27 +228,108 @@
         </div>
         <!-- /header -->
 
-        <!-- Gallery Section -->
-
-         <div class="page-title about">
+        <!-- page-title -->
+        <div class="page-title about">
             <div class="tf-container full">
                 <div class="row">
                     <div class="col-12 " style="margin-top: 100px;">
                         <div class="content text-center">
 
-                            <h2 class="font-cardo fw-7">Gallery</h2>
+                            <h2 class="font-cardo fw-7">Our Gallery</h2>
                             <h6>
-                             Explore moments from our campus, labs, events, and student life
+                                "Experience Campus Life Through Photos.
                             </h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /page-title -->
 
-
-      
      
+
+
+      <!-- Gallery Albums Section -->
+<!-- Filter Buttons -->
+<div class="text-center mb-4">
+  <button class="btn btn-primary filter-btn me-2 active" data-filter="all">All</button>
+  <button class="btn btn-outline-primary filter-btn me-2" data-filter="events">Events</button>
+  <button class="btn btn-outline-primary filter-btn" data-filter="campus">Campus</button>
+  <button class="btn btn-outline-primary filter-btn" data-filter="culture">Caltural Programs</button>
+</div>
+
+<!-- Bootstrap Gallery Grid -->
+<div class="row  gallery-grid">
+  <!-- Replace this with your provided images -->
+  <div class=" gallery-item events">
+    <img src="images/gallery/img1.jpg" alt="events" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img2.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img3.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img4.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img5.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img6.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img7.jpg" alt="Campus" class="img-fluid gallery-img" data-album="events">
+  </div>
+
+  <div class="gallery-item events">
+    <img src="images/gallery/img8.jpg" alt="Lab" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item events">
+    <img src="images/gallery/img9.jpg" alt="Lab" class="img-fluid gallery-img" data-album="events">
+  </div>
+  <div class="gallery-item culture">
+    <img src="images/gallery/img10.jpg" alt="Lab" class="img-fluid gallery-img" data-album="culture">
+  </div>
+  <div class="gallery-item culture">
+    <img src="images/gallery/img11.jpg" alt="Lab" class="img-fluid gallery-img" data-album="culture">
+  </div>
+  <div class="gallery-item campus">
+    <img src="images/gallery/img12.jpg" alt="Lab" class="img-fluid gallery-img" data-album="campus">
+  </div>
+  <div class="gallery-item campus">
+    <img src="images/gallery/img13.jpg" alt="Lab" class="img-fluid gallery-img" data-album="campus">
+  </div>
+</div>
+
+
+
+<!-- siper Modal -->
+<div class="siper-modal" id="siperModal">
+  <div class="siper-container">
+    <div class="siper-wrapper">
+      <!-- Slides injected by JS -->
+    </div>
+    <!-- siper Controls -->
+    <div class="siper-button-next"></div>
+    <div class="siper-button-prev"></div>
+    <div class="siper-pagination"></div>
+  </div>
+  <span class="siper-close">&times;</span>
+</div>
+<!-- Add this in your <head> or global CSS -->
+
+
+<!-- Add this at the bottom of your page before </body> -->
+
+
+
+
+
+
+
+
         <!-- Footer -->
       <footer id="footer" class="footer has-border-top style-4">
             <div class="footer-wrap">
@@ -357,28 +437,93 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/mmenu.js"></script>
     <script type="text/javascript" src="js/lazysize.min.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/siper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/siper.js"></script>
     <script type="text/javascript" src="js/countto.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/inforbox.min.js"></script>
     <script type="text/javascript" src="js/marker.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
-
-   <!-- JS Libraries (Add before </body>) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
-
-
-
-
     <script>
         new Mmenu(document.querySelector("#menu"));
     </script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siper@11/siper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/siper@11/siper-bundle.min.js"></script>
+
+<!-- Gallery Script -->
+<script>
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.getAttribute("data-filter");
+      galleryItems.forEach(item => {
+        item.style.display = (filter === "all" || item.classList.contains(filter)) ? "block" : "none";
+      });
+    });
+  });
+
+  // siper Setup
+  const siperModal = document.getElementById("siperModal");
+  const siperWrapper = siperModal.querySelector(".siper-wrapper");
+  const closesiper = document.querySelector(".siper-close");
+
+  let siperInstance;
+
+  document.querySelectorAll(".gallery-item img").forEach((img, index) => {
+    img.addEventListener("click", () => {
+      // Clear previous slides
+      siperWrapper.innerHTML = "";
+
+      // Get album type
+      const albumType = img.dataset.album;
+      const albumImages = [...document.querySelectorAll(`img[data-album="${albumType}"]`)];
+
+      // Inject slides
+      albumImages.forEach(image => {
+        const slide = document.createElement("div");
+        slide.className = "siper-slide";
+        slide.innerHTML = `<img src="${image.src}" style="width:100%;border-radius:10px;" />`;
+        siperWrapper.appendChild(slide);
+      });
+
+      // Show modal
+      siperModal.style.display = "flex";
+
+      // Init siper
+      siperInstance = new siper(".siper-container", {
+        loop: true,
+        pagination: { el: ".siper-pagination", clickable: true },
+        navigation: {
+          nextEl: ".siper-button-next",
+          prevEl: ".siper-button-prev"
+        }
+      });
+
+      // Jump to clicked image
+      const clickedIndex = albumImages.indexOf(img);
+      siperInstance.slideToLoop(clickedIndex, 0);
+    });
+  });
+
+  closesiper.addEventListener("click", () => {
+    siperModal.style.display = "none";
+    siperInstance.destroy(true, true);
+  });
+</script>
+
+
+ 
+
+
+
+
     <!-- /Javascript -->
 </body>
 
