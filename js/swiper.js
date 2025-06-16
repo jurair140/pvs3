@@ -621,3 +621,6 @@ if ($(".slider-latest-notifications").length > 0) {
 }
   });
 }
+
+
+
