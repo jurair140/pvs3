@@ -15291,7 +15291,24 @@ body, html {
     transform: scale(1.03);
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   }
+
+
+
   
+@media (max-width: 991px) {
+  nav#menu .has-children .mega-menu {
+    display: block !important;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    color: #333;
+  }
+  nav#menu .mega-menu li a {
+    color: #333;
+    display: block;
+    padding: 5px 0;
+  }
+}
 
 
   
